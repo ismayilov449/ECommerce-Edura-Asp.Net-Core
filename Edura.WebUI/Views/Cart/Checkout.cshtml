@@ -1,0 +1,58 @@
+﻿@model OrderDetails
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<section id="content">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-8">
+                <div class="padding25">
+                    <h4>Lütfen bilgileirinizi giriniz</h4>
+                </div>
+                <div class="text-danger" asp-validation-summary="All"></div>
+
+                <form method="post">
+                    <div class="row">                       
+                        <div class="form-group col-xs-12">
+                            <input asp-for="AdresTanimi" class="form-control input-lg" placeholder="Adres Tanimi">
+                        </div>
+
+                        <div class="form-group col-xs-12">
+                            <input asp-for="Adres" class="form-control input-lg" placeholder="Adres">
+                        </div>
+
+                        <div class="form-group col-xs-12">
+                            <input asp-for="Sehir" class="form-control input-lg" placeholder="Sehir">
+                        </div>
+
+                        <div class="form-group col-xs-12">
+                            <input asp-for="Semt" class="form-control input-lg" placeholder="Semt">
+                        </div>
+
+                        <div class="form-group col-xs-12">
+                            <input asp-for="Telefon" class="form-control input-lg" placeholder="Telefon">
+                        </div>
+
+                        <div class="form-group col-xs-12 text-left">
+                            <button type="submit" class="btn btn-primary btn-lg"><i class="fa fa-send fa-fw"></i> Siparişi Tamamla</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="col-md-4">
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+</section>
+

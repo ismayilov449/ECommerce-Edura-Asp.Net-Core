@@ -1,0 +1,85 @@
+#styleswitcher {
+    z-index: 1000!important;
+    position: absolute;
+}
+
+#styleswitcher input[type="checkbox"],
+#styleswitcher input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.settings-btn + label {
+  position: fixed;
+  top: 130px;
+  right: 0;
+  display: block;
+  padding:10px;
+  border-left: 3px solid #666;
+  color: #333;
+  text-align: center;
+  background: #fff;
+  cursor: pointer;
+}
+
+.settings-btn:checked + label {
+  right: 200px; /* match width of .buttons-wrapper */
+  transition: all 0.3s;
+}
+
+.settings-btn:checked ~ .buttons-wrapper {
+  right: 0;
+}
+
+.settings-btn:checked ~ .layout-buttons {
+  right: 30px;
+}
+
+
+.buttons-wrapper {
+  position: fixed;
+  top: 130px;
+  right: -200px; /* should match element width */
+  width: 200px;
+  height: 285px;
+  background: #fff;
+  transition: all 0.3s;
+  text-align: center;
+  border-bottom: 3px solid #666;
+}
+
+.demo-lunar {
+    background-color: #000;
+}
+
+.demo-blue {
+    background-color: #006699;
+}
+
+.demo-green {
+    background-color: #3c9042;
+}
+
+.demo-red {
+    background-color: #a5180d;
+}
+
+.demo-orange {
+    background-color: #e68600;
+}
+
+.demo-btn {
+    color: #FFF;
+    width: 150px;
+    opacity: 0.8;
+}
+
+.demo-btn:hover {
+    color: #FFF;
+    opacity: 0.9;
+}
+
+.demo-btn:active, .demo-btn:focus {
+    color: #FFF;
+    opacity: 1;
+}

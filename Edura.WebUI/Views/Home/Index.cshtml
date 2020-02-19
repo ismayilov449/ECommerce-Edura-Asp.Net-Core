@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<section id="content">
+
+    <section id="shop" class="container">
+
+        <div class="row">
+
+            <!-- sidebar start -->
+            <div id="sidebar" class="col-md-3">
+
+                <div class="widget">
+                    <form class="form-inline">
+                        <div class="input-group">
+                            <input type="text" class="form-control input-lg" placeholder="Search...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default btn-lg" type="submit"><i class="fa fa-search"></i></button>
+                            </span>
+                        </div>
+
+                    </form>
+                </div>
+
+                @await Component.InvokeAsync("CategoryMenu")
+
+                @await Component.InvokeAsync("FeaturedProducts")
+
+
+            </div>
+            <!-- sidebar end -->
+            <!-- right column start -->
+            <div class="col-md-9">
+
+                <div class="row">
+
+                    <div class="col-md-12 wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="row product-results">
+                            <div class="product-results">
+                                <div class="col-xs-8">
+                                    <p class="woocommerce-result-count">
+                                        There are @Model.Count() products
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    @foreach (var product in Model)
+                    {
+                        @Html.Partial("_ProductItem", product)
+                    }
+
+
+                </div>
+
+            </div>
+            <!-- right column end -->
+
+        </div>
+
+
+
+    </section>
+
+
+
+</section>

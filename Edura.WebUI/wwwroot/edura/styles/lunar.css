@@ -1,0 +1,251 @@
+
+/***** START TEXT COLORS *****/
+pre, .bg-dark, .navbar-default .navbar-brand, .navbar-default .navbar-text, .navbar-default .navbar-nav > li > a, .navbar-default .dropdown-header,
+.navbar-default .dropdown-menu > li > a, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus,
+navbar-default .navbar-link:hover, .navbar-default .btn-link:hover, .navbar-default .btn-link:focus, .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus,
+.panel-default > .panel-heading, .cd-hero .container h1, .cd-hero .container h2, .arrow-nav a, .pagination li.active a, .pagination li a:hover, .pagination li a:active, .pagination li a:focus,
+.pagination li.active a:hover, .pagination li.active a:active, .pagination li.active a:focus, #services-4 .feature i, #pricing-1 .top, .team-item .team-top ul li a, .portfolio-item-desc,
+.portfolio-item-desc a, .portfolio-item .portfolio-top .portfolio-tag, .portfolio-item .portfolio-top .portfolio-tag a, .portfolio-item .portfolio-top ul li a,
+.product-item .product-item-top .product-item-tag, .product-item .product-item-top .product-item-tag a, .product-item .product-item-top ul li a
+{
+    color: #FFF;
+}
+
+.navbar-default .navbar-link, .navbar-default .btn-link, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .dropdown-menu > li > a:hover, .navbar-default .dropdown-menu > li > a:focus,
+.portfolio-item-desc a:hover, .portfolio-item .portfolio-top .portfolio-tag a:hover, .product-item .product-item-top .product-item-tag a:hover, #footer a:hover, footer a:active
+{
+    color: #DDD;
+}
+
+.navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus, #footer a
+{
+    color: #CCC;
+}
+
+#title .breadcrumbs, .bigfeature-heading .text-muted, blockquote::before, .portfolio-controls li, #blog-grid .blog-meta, #blog-list .blog-meta, #blog-single .blog-meta
+{
+    color: #888;
+}
+
+a, blockquote, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus
+{
+    color: #666;
+}
+
+#services-4 .feature p
+{
+    color: #555;
+}
+
+a:hover, a:active, a:focus, .bigfeature-heading, .bigfeature-icon, .pagination li a, .portfolio-item .portfolio-top ul li a:hover, .product-item-inner .product-price, .product-item .product-item-top ul li a:hover,
+.team-item .team-top ul li a:hover
+{
+    color: #333;
+}
+
+#services-4 .feature h4
+{
+    color: #222;
+}
+
+.list-group-item.active > .badge, .nav-pills > .active > a > .badge, #services-3 .big-icon:hover
+{
+    color: #111;
+}
+
+.portfolio-controls li.active
+{
+    color: #000;
+}
+
+.bigfeature-icon, #counters i, #services-2 h4 b, .big-icon, h1 b, h2 b, h3 b, h4 b
+{
+    color: #333;
+}
+
+#services-3 .big-icon:hover
+{
+    color: #555;
+}
+
+#intro h1 b, #intro h2 b, #intro h3 b, #intro h4 b, #call-to-action h1 b, #call-to-action h2 b, #call-to-action h3 b, #call-to-action h4 b
+{
+    color: #FFF;
+}
+/***** END TEXT COLORS *****/
+
+
+
+
+/***** START BACKGROUND COLORS *****/
+
+.list-group-item.active > .badge, .nav-pills > .active > a > .badge, .team-item .team-top ul li a:hover, .portfolio-item .portfolio-top ul li a:hover, .product-item .product-item-top ul li a:hover
+{
+    background-color: #fff;
+}
+
+#title, .bg-gray
+{
+    background-color: #EEE;
+}
+
+.navbar-default .navbar-toggle .icon-bar
+{
+    background-color: #DDD;
+}
+
+.panel-default > .panel-heading, #pricing-1 .top
+{
+    background-color: #AAA;
+}
+
+.bg-dark, .pagination li.active a, .pagination li a:hover, .pagination li a:active, .pagination li a:focus, .pagination li.active a:hover, .pagination li.active a:active, .pagination li.active a:focus,
+#services-4 .feature i, #pricing-1 .featured .top, .team-item .team-top ul li a, .portfolio-item .portfolio-top ul li a, .product-item .product-item-top ul li a
+{
+    background-color: #333;
+}
+
+.btn-primary, .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .label-primary, .progress-bar-primary
+{
+    background-color: #111;
+}
+
+ pre, .navbar-default .divider, .navbar-default .dropdown-menu > li > a:hover, .navbar-default .dropdown-menu > li > a:focus, .navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover,
+ .navbar-default .navbar-toggle:focus, .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:target, .btn-primary:active:focus, .owl-theme .owl-controls .owl-buttons div
+{
+    background-color: #000;
+}
+
+ .navbar-default, .cd-hero .container h2, .team-item .team-top .mask, .portfolio-item-desc, .portfolio-item .portfolio-top .mask, .product-item .product-item-top .mask
+{
+    background-color:rgba(0,0,0,0.6);
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus, .navbar-default .dropdown-menu, .navbar-default .navbar-toggle, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus, .arrow-nav a:hover, #footer, .bg-mask-black, .dropdown-menu > li.active > a
+{
+    background-color:rgba(0,0,0,0.8);
+}
+
+ .arrow-nav a
+{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#footer{
+    background-color:rgba(0,0,0,0.8);
+}
+/***** END BACKGROUND COLORS *****/
+
+
+
+
+/***** START BORDER COLORS *****/
+#pricing-1 ul li, #pricing-2 ul li, #pricing-3 ul li, #blog-grid .blog-meta, #blog-list .blog-meta, #blog-single .blog-meta
+{
+    border-color: #DDD;
+}
+
+.widget h4, #blog-grid .blog-item, #blog-list .blog-item, .reviews-list .media-body, #shop .product-item
+{
+    border-color: #CCC;
+}
+
+#shop .product-item:hover, #blog-list .blog-item:hover, #blog-grid .blog-item:hover
+{
+    border-color: #BBB;
+}
+
+#pricing-1 .price, #pricing-2 .price, #pricing-3 .price
+{
+    border-color: #AAA;
+}
+
+.form-control:focus, blockquote
+{
+    border-color: #999;
+}
+
+#pricing-1 .featured, #pricing-2 .featured, #pricing-3 .featured
+{
+    border-color: #555;
+}
+
+.pagination li.active a, .pagination li a:hover, .pagination li a:active, .pagination li a:focus, .pagination li.active a:hover, .pagination li.active a:active, .pagination li.active a:focus
+{
+    border-color: #333;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form, .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:target, .btn-primary:active:focus,
+.panel-default > .panel-heading
+{
+    border-color: #000;
+}
+/***** END BORDER COLORS *****/
+
+
+
+
+/***** START SHADOWS *****/
+.btn {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 8px rgba(0, 0, 0, 0.19);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 0 8px rgba(0, 0, 0, 0.19);
+}
+
+.cd-hero .container {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+#blog-grid .blog-item:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#blog-list .blog-item:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#shop .product-item:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/***** END SHADOWS *****/
+
+
+
+/***** START COLLAPSED NAVBAR *****/
+@media (max-width: 767px) {
+    .navbar-collapse {
+        background-color: rgba(0,0,0,0.8);
+        border-color: #000;
+    }
+    .navbar-default .navbar-nav > li > a {
+        color: #EEE;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu,
+    .navbar-default .navbar-nav .open .dropdown-submenu  {
+        background-color: rgba(0,0,0,0.8);
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #DDD;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #FFF;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #DDD;
+        background-color: rgba(0,0,0,1);
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+    }
+}
+/***** END COLLAPSED NAVBAR *****/

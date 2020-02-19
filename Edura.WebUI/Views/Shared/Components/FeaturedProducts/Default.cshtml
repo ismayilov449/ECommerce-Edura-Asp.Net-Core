@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Product>
+
+<div class="widget">
+    <h4>FEATURED</h4>
+
+    <div class="products-list">
+
+        @foreach (var item in Model)
+        {
+            <div class="media">
+                <a class="media-left" href="#">
+                    <img alt="" class="img-responsive product-thumb" src="/images/products/tn/@item.Image">
+                </a>
+                <div class="media-body">
+                    <a  asp-controller="Product" 
+                        asp-action="Details" 
+                        asp-route-id="@item.ProductId" class="product-title">@item.ProductName</a>
+                    <p class="product-price">$@item.Price</p>
+                </div>
+            </div>
+        }
+
+
+    </div>
+
+</div>

@@ -1,0 +1,20 @@
+﻿@model IEnumerable<CategoryModel>
+
+<div class="widget">
+    <h4>CATEGORIES</h4>
+    <ul class="list-unstyled link-list">
+       
+        @foreach (var item in Model)
+        {
+            <li>
+                <i class="fa fa-angle-right fa-fw" aria-hidden="true"></i>
+                <a asp-controller="Product" asp-action="List" asp-route-category="@item.CategoryName">
+                    @item.CategoryName <span class="pull-right">(@item.Count)</span>
+                </a>
+            </li>
+        }
+
+   
+
+    </ul>
+</div>

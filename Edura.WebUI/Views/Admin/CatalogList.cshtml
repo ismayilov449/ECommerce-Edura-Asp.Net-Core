@@ -1,0 +1,158 @@
+﻿@model CatalogListModel
+@{
+    ViewData["Title"] = "CatalogList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h2>Catalog</h2>
+<hr />
+<div class="card">
+    <div class="card-header">
+        Categories
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>CategoryName</th>
+                <th style="width:135px;"></th>
+            </tr>
+        </thead>
+        <tbody id="categories">
+
+            @foreach (var item in Model.Categories)
+            {
+                <tr>
+                    <td>@item.CategoryId</td>
+                    <td>@item.CategoryName</td>
+                    <td>
+                        <a asp-controller="Admin" asp-action="EditCategory" asp-route-id="@item.CategoryId" class="btn btn-primary btn-sm">
+                            Edit
+                        </a>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+
+    <div class="card-footer">
+        <button class="btn btn-primary" data-toggle="modal" data-target="#addCategoryModal">Create</button>
+
+        @Html.Partial("_addCategoryForm",new Category())
+        @section scripts{ 
+
+            <script>
+                $("#addCategory").submit(function (event) { 
+
+                    event.preventDefault();
+                    var form = $(this);
+
+                    var token = $('input[name="__RequestVerificationToken"]', form).val();
+                    var data = { categoryName: $("#CategoryName").val() };
+                    var dataWithToken = $.extend(data, { '__RequestVerificationToken': token });
+
+                    $.ajax({
+                        url: form.attr("action"),
+                        type: "POST",
+                        data: dataWithToken,
+                        beforeSend: function () {
+                            $("#ajax-loader").show();
+                        },
+                        complete: function () {
+                            $("#ajax-loader").hide();
+                        },
+                        success: function (data) {
+
+                            var html = '<tr><td>' + data.categoryId + '</td><td>' + data.categoryName + '</td><td><button class="btn btn-primary btn-sm">Edit</button><button class="btn btn-danger btn-sm">Delete</button></td></tr>';
+                            $("#categories").append(html);
+                            $("#addCategoryModal").modal('hide');
+                        },
+                        error: function () {
+
+                        }
+                    });
+
+
+                });
+
+
+            </script>
+
+        }
+
+    </div>
+</div>
+<hr />
+
+<div class="card">
+    <div class="card-header">
+        Products
+    </div>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Image</th>
+                <th>ProductName</th>
+                <th>IsApproved</th>
+                <th>IsHome</th>
+                <th>IsFeatured</th>
+                <th style="width:135px;"></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model.Products)
+            {
+                <tr>
+                    <th>@item.ProductId</th>
+                    <td>
+                        <img src="~/images/products/tn/@item.Image" width="60" />
+                    </td>
+                    <td>@item.ProductName</td>
+                    <td>
+                        @if (item.IsApproved)
+                        {
+                            <span data-feather="check-square"></span>
+                        }
+                        else
+                        {
+                            <span data-feather="x-square"></span>
+                        }
+                    </td>
+                    <td>
+                        @if (item.IsHome)
+                        {
+                            <span data-feather="check-square"></span>
+                        }
+                        else
+                        {
+                            <span data-feather="x-square"></span>
+                        }
+                    </td>
+                    <td>
+                        @if (item.IsFeatured)
+                        {
+                            <span data-feather="check-square"></span>
+                        }
+                        else
+                        {
+                            <span data-feather="x-square"></span>
+                        }
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm">Edit</button>
+                        <button class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+    <div class="card-footer">
+        <a class="btn btn-primary" asp-controller="Admin" asp-action="AddProduct">Create</a>
+    </div>
+
+</div>
