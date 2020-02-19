@@ -31,8 +31,8 @@ namespace Edura.WebUI.IdentityCore
                 {
                      UserName=username,
                      Email=email,
-                     Name="Sadık",
-                     SurName="Turan"
+                     Name="Rufat",
+                     SurName="Ismayilov"
                 };
 
                 IdentityResult result = await userManager.CreateAsync(user, password);

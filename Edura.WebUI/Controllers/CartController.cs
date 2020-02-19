@@ -66,7 +66,7 @@ namespace Edura.WebUI.Controllers
 
             if (cart.Products.Count == 0)
             {
-                ModelState.AddModelError("UrunYokModel", "Sepetinizde ürün bulunmamaktadır.");
+                ModelState.AddModelError("NoProducts", "You have no products in your bucket.");
             }
 
             if (ModelState.IsValid)

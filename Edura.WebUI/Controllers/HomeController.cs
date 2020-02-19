@@ -31,7 +31,7 @@ namespace Edura.WebUI.Controllers
 
         public IActionResult Create()
         {
-            var prd = new Product() { ProductName = "Yeni Ürün", Price = 1000 };
+            var prd = new Product() { ProductName = "New Product", Price = 1000 };
 
             uow.Products.Add(prd);
             uow.SaveChanges();

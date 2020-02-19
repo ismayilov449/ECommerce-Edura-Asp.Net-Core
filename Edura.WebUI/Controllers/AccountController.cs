@@ -50,7 +50,7 @@ namespace Edura.WebUI.Controllers
                         return Redirect(returlUrl ?? "/");
                     }
                 }
-                ModelState.AddModelError(nameof(model.Email), "Hatalı kullanıcı adı yada parola");
+                ModelState.AddModelError(nameof(model.Email), "Invalid username or password");
             }
 
             return View(model);
